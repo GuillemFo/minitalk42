@@ -6,11 +6,11 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:46:01 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/06 18:38:39 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/09/06 18:58:18 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"\
+#include "minitalk.h"
 
 int return_error(void)
 {
