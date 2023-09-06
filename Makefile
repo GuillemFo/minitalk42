@@ -40,7 +40,7 @@ makefclean:
 clean:
 	rm -rf $(PATH_OBJ)
 
-fclean: clean
+fclean: clean makefclean
 	rm -rf $(NAME_C) $(NAME_S)
 
 .PHONY: all re clean fclean bonus
