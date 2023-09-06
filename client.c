@@ -6,7 +6,7 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:46:01 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/06 18:58:18 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/09/06 19:00:19 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,10 @@ int	main(int argc, char **argv)
 	return (0);
 }
 
+
+
+
+//argv 3 is already bits so only need to send 1 by one
 
 
 //send info to server through process id in bits??
