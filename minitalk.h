@@ -1,17 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   minitalk.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/06 13:11:56 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/06 15:03:42 by gforns-s         ###   ########.fr       */
+/*   Created: 2023/09/06 15:00:25 by gforns-s          #+#    #+#             */
+/*   Updated: 2023/09/06 15:03:43 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	main(void)
-{
-	printf("server\n");
-	return (0);
-}
+#ifndef MINITALK_H
+# define MINITALK_H
+
+# include <signal.h>
+# include <stdio.h>
+
+#endif
