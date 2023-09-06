@@ -6,7 +6,7 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 15:00:25 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/06 15:03:43 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/09/06 18:02:13 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,7 @@
 
 # include <signal.h>
 # include <stdio.h>
+# include "libft.h"
+
 
 #endif
