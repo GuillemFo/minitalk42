@@ -6,48 +6,59 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:46:01 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/06 19:00:19 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/09/07 17:32:02 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-int return_error(void)
+void return_error(void)
 {
 	ft_printf("Error/n");
-	return (-1);
 }
 
-
-int	check_if_digit_only(int argc, char *argv)
+int	ascii_to_binary(pid_t pid)
 {
+	int		i;
+	int		pos;
+	char	chr;
 
+	chr = 'c';
+	pos = 7;
 
-
+	while (pos >= 0)
+	{
+		i =	(chr >> pos & 1);
+		if (i == 1)
+		kill(pid, SIG_1);
+		else
+		kill(pid, SIG_0);
+	}
+	return (0);
 }
-
 
 int	main(int argc, char **argv)
 {
 	pid_t	pid;
-	int error;
-
-	error = check_if_digit_only(argc, argv[1]);
-	if (error == 1)
-		return (return_error);	
+	
+	int	test;
 	pid = ft_atoi(argv[1]);
-	if (argc < 3)
+	if (argc < 2 || argc > 3)
 		return (return_error);
-	kill(pid, SIGUSR1);
-	printf("test:%d\n", pid);
-	printf("client\n");
+	test = ascii_to_binary;
 	return (0);
 }
 
 
 
 
-//argv 3 is already bits so only need to send 1 by one
+
+
+
+//crear funcion que mande 0 o 1 al server 
+
+
+//argv 2 is already bits so only need to send 1 by one
 
 
 //send info to server through process id in bits??
@@ -56,4 +67,9 @@ int	kill(pid_t pid, int sig)// pid (ARGV) sig = text ascii to binary??
 {
 	
 }
+*/
+
+
+/*
+
 */

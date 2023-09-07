@@ -6,7 +6,7 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:11:56 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/06 18:57:26 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/09/07 17:28:53 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void tonta(int	signal)
 {
-	if (signal == SIGUSR1)
-		printf("hola\n");
-	else if (signal == SIGUSR2)
-		printf("adios\n");
+	if (signal == SIG_0)
+		printf("0\n");
+	else if (signal == SIG_1)
+		printf("1\n");
 }
 
 int	main(void)
@@ -38,8 +38,6 @@ int	main(void)
 }
 
 /*
-bit to ascii
-ascii to binary 
 
 //print process id and start listening ?
 
@@ -52,5 +50,7 @@ int	kill(pid_t pid, int sig)
 
 //get ready to recive bits and be able to print it? 
 */
+
+
 
 
