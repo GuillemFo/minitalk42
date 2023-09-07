@@ -6,7 +6,7 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:11:56 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/09/07 17:28:53 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/09/07 18:54:57 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void tonta(int	signal)
 {
+
+	//en vez de print, añadir todo a una string de numeros y luego transformarla de bit a ascii en bloques de 8.
 	if (signal == SIG_0)
 		printf("0\n");
 	else if (signal == SIG_1)
@@ -27,8 +29,8 @@ int	main(void)
 	pid = getpid();
 	printf("server\n");
 	printf("Process ID:%d\n", pid);
-	signal(SIGUSR1, tonta);
-	signal(SIGUSR2, tonta);
+	signal(SIG_0, tonta);
+	signal(SIG_1, tonta);
 	while (1)
 	{
 		printf("esperando\n");
