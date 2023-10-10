@@ -6,7 +6,7 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:46:01 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/10/10 20:08:43 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/10/10 20:17:02 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,10 @@ int	main(int argc, char **argv)
 		return (return_error());
 	pid = ft_atoi(argv[1]);
 	if (!argv[2])
-		return(return_error());
+		return (return_error());
 	text = argv[2];
 	if (text[0] == '\0')
-		return(return_error());
+		return (return_error());
 	size = ft_strlen(text);
 	ascii_to_binary(pid, text, size);
 	return (0);
