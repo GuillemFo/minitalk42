@@ -43,4 +43,4 @@ clean:
 fclean: clean makefclean
 	rm -rf $(NAME_C) $(NAME_S)
 
-.PHONY: all re clean fclean bonus
+.PHONY: all re clean fclean
