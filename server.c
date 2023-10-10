@@ -13,7 +13,7 @@
 #include "minitalk.h"
 
 
-int	binary_to_ascii(int signal)
+char binary_to_ascii(int signal)
 {
 	int		pos;
 	char	result;
