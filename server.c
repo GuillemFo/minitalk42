@@ -6,7 +6,7 @@
 /*   By: gforns-s <gforns-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 13:11:56 by gforns-s          #+#    #+#             */
-/*   Updated: 2023/10/10 20:18:04 by gforns-s         ###   ########.fr       */
+/*   Updated: 2023/10/11 10:36:29 by gforns-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int	main(void)
 	pid_t	pid;
 
 	pid = getpid();
-	printf("server\n");
-	printf("Process ID:%d\n", pid);
+	ft_printf("Server\n");
+	ft_printf("Process ID:%d\n", pid);
 	signal(SIG_1, &binary_to_ascii);
 	signal(SIG_0, &binary_to_ascii);
 	while (1)
